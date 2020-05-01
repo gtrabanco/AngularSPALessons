@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title">Saludador</h4>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+          <label for="usernameid">Nombre</label>
+          <input type="text" #username class="form-control" name="userName" id="usernameid" aria-describedby="helpId" placeholder="Username...">
+        </div>
+        <button (click)="username.value = username.value">Saludame</button>
+        <button (click)="username.value = ''">Delete</button>
+    </div>
+    <div class="card-footer text-muted">
+        Hola {{ username.value }}
+    </div>
+</div>

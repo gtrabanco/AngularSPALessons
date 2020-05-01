@@ -1,0 +1,21 @@
+<div *ngIf="aItems.length" class="card">
+    <div class="card-header">
+      <h4 class="card-title">Lista de tareas</h4>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li *ngFor="let item of aItems; index as i">{{ item | uppercase | slice:0:1  }}{{ item | lowercase |slice:1 }}  
+          <button type="button" (click)="btnDelete(i)"
+            class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Borrar</button>
+        </li>
+        <li>{{ samplepipe | mypipe:0:1 }}</li>
+      </ul>
+    </div>
+
+    <div class="card-body">
+      <small class="title">JSON Code</small>
+      <pre>{{ aItems | json }}</pre>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+  </div>

@@ -13,7 +13,7 @@ export class HeadComponent implements OnInit {
 
   ngOnInit(): void {
     //this.title = this.title ? this.title: "Default head title"
-    this.title = "head title"
+    this.title = "Library and more SPA"
   }
 
 }

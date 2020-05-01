@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <p>
-      home works!
-    </p>
+    <div class="row">
+      <app-sayhi class="col"></app-sayhi>
+      <app-refs class="col"></app-refs>
+    </div>
   `,
   styles: [
   ]

@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title">Saludador</h4>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" [(ngModel)]="user" class="form-control" name="userName" id="userid" aria-describedby="helpId" placeholder="Username...">
+          <small id="helpId" class="form-text text-muted">Set a username</small>
+        </div>
+        <button (click)="btnDelete($event)">Delete</button>
+    </div>
+    <div class="card-footer text-muted">
+        Hola {{user}}
+    </div>
+</div>

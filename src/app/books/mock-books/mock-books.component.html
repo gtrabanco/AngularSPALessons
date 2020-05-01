@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-header">
+      <h2 class="card-title">Libros en Mock</h2>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <label for="">Clave de búsqueda</label>
+            <input type="text" class="form-control" 
+            name="mockKey" id="mockKeyId" [(ngModel)]="key">
+        </div>
+        <button class="btn btn-primary" type="button"
+            (click)="btnSearch()">Buscar</button>
+        <button class="btn btn-primary"
+        (click)="btnSearchRx()">BuscarRx</button>
+    </div>
+    <div class="card-footer text-muted" *ngIf="aBooks.length > 0">
+        <h3>Resultado</h3>
+        <ol>
+            <li *ngFor="let book of aBooks">{{ book }}</li>
+        </ol>
+    </div>
+</div>

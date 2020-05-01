@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header">
+        <h4>{{ book.title }}</h4>
+        <h5>{{ authors }}</h5>
+    </div>
+    <div class="card-body">
+        
+        <img *ngIf="book.image" [src]="book.image" [alt]="alt">
+        <p>{{ book.description }}</p>
+    </div>
+    <div class="card-footer text-muted">
+        <a (click)="gotoBooks()">Go Back!</a>
+    </div>
+</div>
+
+
